@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="stylecss.css">
+
+   <!-- custom js file link  -->
+   <script src="script2.js" defer></script>
+
+</head>
+<header>
+   <h1 style="font-family: Mochiy Pop P One,  sans-serif;  font-weight: 600;  font-style: normal; font-size:  35px;">Shop</h1>
+   <nav>
+      <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="akun.html">Daftar</a></li>
+            <li class="cart-icon">
+               <a href="#">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span id="cart-count">0</span>
+               </a>
+         </li>
+      </ul>
+   </nav>
+</header>
+<body>
+   
+<div class="container">
+
+   <h3 class="title"> Produk Eletronik </h3>
+
+   <div class="products-container">
+
+      <div class="product" data-name="p-1">
+         <img src="laptop.png" alt="">
+         <h3>Laptop</h3>
+         <div class="price">Rp.5.500.000</div>
+      </div>
+
+      <div class="product" data-name="p-2">
+         <img src="pc.png" alt="">
+         <h3>Komputer</h3>
+         <div class="price">Rp.15.000.000</div>
+      </div>
+
+      <div class="product" data-name="p-3">
+         <img src="kulkas.png" alt="">
+         <h3>Kulkas 2 Pintu</h3>
+         <div class="price">Rp.7.000.000</div>
+      </div>
+
+      <div class="product" data-name="p-4">
+         <img src="tv.png" alt="">
+         <h3>TV LED</h3>
+         <div class="price">Rp.5.320.000</div>
+      </div>
+
+      <div class="product" data-name="p-5">
+         <img src="hp.png" alt="">
+         <h3>Handphone</h3>
+         <div class="price">Rp.4.500.000</div>
+      </div>
+
+      <div class="product" data-name="p-6">
+         <img src="print.png" alt="">
+         <h3>Printer</h3>
+         <div class="price">Rp.2.320.000</div>
+      </div>
+
+      <div class="product" data-name="p-7">
+         <img src="cuci.png" alt="">
+         <h3>Mesin Cuci</h3>
+         <div class="price">Rp.4.120.000</div>
+      </div>
+
+   </div>
+
+</div>
+
+<div class="products-preview">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="laptop.png" alt="">
+      <h3>Laptop</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">Rp.5.500.000</div>
+      <div class="buttons">
+         <a href="#" class="buy" onclick="addToCart('Laptop', 5500000)">Masukan ke Keranjang</a>
+         <a href="#" class="cart">Beli Sekarang</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img src="pc.png" alt="">
+      <h3>Komputer</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">Rp.15.000.000</div>
+      <div class="buttons">
+         <a href="#" class="buy" onclick="addToCart('Laptop', 1500000)">Masukan ke Keranjang</a>
+         <a href="#" class="cart">Beli Sekarang</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="kulkas.png" alt="">
+      <h3>Kulkas 2 Pintu</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">Rp.7.000.000</div>
+      <div class="buttons">
+         <a href="#" class="buy" onclick="addToCart('Laptop', 7000000)">Masukan ke Keranjang</a>
+         <a href="#" class="cart">Beli Sekarang</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="tv.png" alt="">
+      <h3>Tv LED</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">Rp.5.320.000</div>
+      <div class="buttons">
+         <a href="#" class="buy" onclick="addToCart('Laptop', 5320000)">Masukan ke Keranjang</a>
+         <a href="#" class="cart">Beli Sekarang</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="hp.png" alt="">
+      <h3>Handphone</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">Rp.4.500.000</div>
+      <div class="buttons">
+         <a href="#" class="buy" onclick="addToCart('Laptop', 4500000)">Masukan ke Keranjang</a>
+         <a href="#" class="cart">Beli Sekarang</a>
+      </div>
+   </div>
+
+   
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="print.png" alt="">
+      <h3>Pinter</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">Rp.2.320.000</div>
+      <div class="buttons">
+         <a href="#" class="buy" onclick="addToCart('Laptop', 2320000)">Masukan ke Keranjang</a>
+         <a href="#" class="cart">Beli Sekarang</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-7">
+      <i class="fas fa-times"></i>
+      <img src="cuci.png" alt="">
+      <h3>Mesin Cuci</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">Rp.4.120.000</div>
+      <div class="buttons">
+         <a href="#" class="buy" onclick="addToCart('Laptop', 4120000)">Masukan ke Keranjang</a>
+         <a href="#" class="cart">Beli Sekarang</a>
+      </div>
+   </div>
+</div>
+
+<div class="wave"></div>
+<div class="wave"></div>
+<div class="wave"></div>
+
+</body>
+</html>

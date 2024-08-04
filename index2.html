@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 30px;">Jasa Service Elektronik</h1>
+        <nav>
+            <ul style="font-size: 20px;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="akun.html">Daftar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="informasi">
+                <h1 style="font-size: 50px; text-align : center;">Tentang Kami</h1>
+                <p style="text-align: center; font-size: 20px;">Kami sangat senang Anda mengunjungi kami, tempat dimana Anda 
+                    dapat menemukan layanan elektronik berkualitas dan berbagai produk elektronik terbaik untuk kebutuhan Anda. 
+                    Kami adalah penyedia layanan dan produk elektronik yang berdedikasi untuk 
+                    memberikan solusi terbaik dengan layanan pelanggan yang unggul.</p>
+
+                    <!-- Tambahkan di bagian footer atau di mana pun Anda ingin menampilkan ikon sosial media -->
+                    <div class="social-media">
+                        <a href="https://wa.me/nomor-telepon-anda" target="_blank" title="Chat dengan kami di WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://facebook.com/username-anda" target="_blank" title="Ikuti kami di Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/username-anda" target="_blank" title="Ikuti kami di Instagram">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+ 
+            </div>
+            <h2 style="font-size: 50px; text-align: center;">Layanan Kami</h2>
+            <div class="services-container">
+                <div class="service" onclick="showServiceDetails('computer')">
+                    <img src="pc.png" alt="Service Komputer">
+                    <h3 style="font-size: 30px;">Service Komputer</h3>
+                </div>
+                <div class="service" onclick="showServiceDetails('lapto')">
+                    <img src="laptop.png" alt="Service Laptop">
+                    <h3 style="font-size: 30px;">Service Laptop</h3>
+                </div>
+                <div class="service" onclick="showServiceDetails('tv')">
+                    <img src="tv.png" alt="Service HP">
+                    <h3 style="font-size: 30px;">Service Tv</h3>
+                </div>
+                <div class="service" onclick="showServiceDetails('Kulkas')">
+                    <img src="kul.png" alt="Service Lainnya">
+                    <h3 style="font-size: 30px;">Service Kulkas</h3>
+                </div>
+                <div class="service" onclick="showServiceDetails('Strika')">
+                    <img src="strika.png" alt="Service Lainnya">
+                    <h3 style="font-size: 30px;">Service Strika</h3>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jasa Servis Elektronik</p>
+    </footer>
+</body>
+</html>
